@@ -28,6 +28,7 @@
 | Module 名称                                                  | Module 介绍                                                  |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | [study-rate-limit-guava](./study-rate-limit-guava)               | spring-boot 使用 Guava RateLimiter 实现单机版限流，防止 API 被恶意频繁访问  |
+| [study-rate-limit-redis](./study-rate-limit-redis)               | spring-boot 使用 Redis + Lua 脚本 实现分布式限流，防止 API 被恶意频繁访问  |
 
 
 ### License

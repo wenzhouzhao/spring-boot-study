@@ -14,6 +14,7 @@
     <modules>
         <module>study-common</module>
         <module>study-rate-limit-guava</module>
+        <module>study-rate-limit-redis</module>
     </modules>
 
     <properties>

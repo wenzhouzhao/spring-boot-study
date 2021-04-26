@@ -1,0 +1,7 @@
+server:
+  port: 8080
+spring:
+  redis:
+    host: localhost
+    password: redis_pwd
+    timeout: 10000ms
