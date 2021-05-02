@@ -12,6 +12,8 @@
     <url>https://www.codecloud.cloud/</url>
 
     <modules>
+        <module>study-actuator</module>
+        <module>study-admin</module>
         <module>study-common</module>
         <module>study-rate-limit-guava</module>
         <module>study-rate-limit-redis</module>
@@ -27,6 +29,7 @@
         <hutool.version>5.4.5</hutool.version>
         <guava.version>29.0-jre</guava.version>
         <lombok.version>1.18.2</lombok.version>
+        <dozer.version>5.4.0</dozer.version>
     </properties>
 
     <dependencyManagement>
@@ -63,6 +66,11 @@
                 <artifactId>lombok</artifactId>
                 <version>${lombok.version}</version>
                 <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>net.sf.dozer</groupId>
+                <artifactId>dozer</artifactId>
+                <version>${dozer.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
