@@ -1,0 +1,15 @@
+server:
+  port: 8080
+spring:
+  rabbitmq:
+    addresses: 192.168.1.88:5672,192.168.1.88:5674,192.168.1.88:5674
+    port: 5672
+    username: guest
+    password: guest
+    virtual-host: /
+    # 手动提交消息
+    listener:
+      simple:
+        acknowledge-mode: manual
+      direct:
+        acknowledge-mode: manual
