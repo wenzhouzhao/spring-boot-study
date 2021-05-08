@@ -15,6 +15,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
+        <study-common.version>1.0.0</study-common.version>
     </properties>
     <dependencies>
         <dependency>
@@ -41,6 +42,12 @@
         <dependency>
             <groupId>com.google.guava</groupId>
             <artifactId>guava</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>cloud.codecloud</groupId>
+            <artifactId>study-common</artifactId>
+            <version>${study-common.version}</version>
         </dependency>
 
         <dependency>

@@ -28,7 +28,7 @@ public class DirectQueueOneConsumer {
      */
     // @RabbitHandler
     public void directHandlerAutoAck(MessageStructPO message) {
-        log.info("直接队列1消费者，接收消息：{}", JSONUtil.toJsonStr(message));
+        log.info("直接队列1消费者，队列名：{}，接收消息：{}",RabbitConstants.DIRECT_MODE_QUEUE_ONE, JSONUtil.toJsonStr(message));
     }
 
 
@@ -37,7 +37,7 @@ public class DirectQueueOneConsumer {
         //  如果手动ACK,消息会被监听消费,但是消息在队列中依旧存在,如果 未配置 acknowledge-mode 默认是会在消费完毕后自动ACK掉
         final long deliveryTag = message.getMessageProperties().getDeliveryTag();
         try {
-            log.info("直接队列1，手动ACK，接收消息：{}", JSONUtil.toJsonStr(messageStruct));
+            log.info("直接队列1，手动ACK，队列名：{}，接收消息：{}", RabbitConstants.DIRECT_MODE_QUEUE_ONE, JSONUtil.toJsonStr(messageStruct));
             // 通知 MQ 消息已被成功消费,可以ACK了
             channel.basicAck(deliveryTag, false);
         } catch (IOException e) {
